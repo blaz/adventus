@@ -27,6 +27,15 @@ Assuming you have ran `bundle install` beforehand you can execute all tests with
 
 ```
 bundle exec rspec
+
+```
+
+## Linting
+
+Rubocop was added and can be run with
+
+```
+bundle exec rubocop
 ```
 
 ### Happy arriving!
