@@ -1,24 +1,33 @@
-# README
+# Adventus
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application displays live-updating TFL underground train arrivals to Great Portland Street Station.
 
-Things you may want to cover:
+By default the page will refresh every 5 seconds. This can be adjusted in the main application layout template.
 
-* Ruby version
+## Running
 
-* System dependencies
+To run this make sure you have a recent Ruby 3 installed and then in the application directory run
 
-* Configuration
+```
+bundle install
 
-* Database creation
+```
 
-* Database initialization
+If that went well start the app with
 
-* How to run the test suite
+```
+bundle exec rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Once the server is started you can open the live timings by visiting `[http://localhost:3000](http:///localhost:3000)`
 
-* Deployment instructions
+## Testing
 
-* ...
+Assuming you have ran `bundle install` beforehand you can execute all tests with
+
+```
+bundle exec rspec
+```
+
+### Happy arriving!
+
