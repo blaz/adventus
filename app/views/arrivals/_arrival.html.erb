@@ -1,0 +1,7 @@
+<div class="arrival">
+  <div class="line line-<%= arrival.line_id %>">
+    <span><%= arrival.line_name %></span>
+  </div>
+  <div class="towards"><%= arrival.towards %></div>
+  <div class="due"><%= due(arrival) %></div>
+</div>

@@ -1,15 +1,78 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
  *= require_tree .
  *= require_self
  */
+
+body {
+  max-width: 60%;
+  margin: auto;
+  font-family: Arial;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.arrivals {
+  margin-bottom: 2rem;
+}
+
+.arrival {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+
+.arrival div {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid gray;
+}
+
+.platform {
+  font-size: 1.5rem;
+  background-color: rgba(211, 211, 211, 0.587);
+  padding: 0.75rem;
+}
+
+.due {
+  text-align: right;
+}
+
+.line-circle {
+  background-color: #FFCE00;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+}
+
+.line-hammersmith-city {
+  background-color: #D799AF;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+}
+
+.line-metropolitan {
+  background-color: #751056;
+  color: white;
+}
+
+/* Lets look nice on mobile too */
+@media screen and (max-width: 800px) {
+  body {
+    max-width: 95%; 
+  }
+
+  .arrival {
+    display: grid;
+    grid-template-columns: 50px 70% 20%;
+  }
+
+  .line span {
+    display: none;
+  }
+}

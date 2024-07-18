@@ -1,0 +1,13 @@
+<% content_for :page_title, "#{@station_name} Arrivals" %>
+
+<h1><%= @station_name %></h1>
+<h2>Live Arrivals - <%= Time.zone.now.strftime('%H:%M:%S') %></h2>
+
+<% @arrivals.by_platform.each do |platform, arrivals| %>
+  <div class="platform"><%= platform %></div>
+  <div class="arrivals">
+    <% arrivals.each do |arrival| %>
+      <%= render 'arrival', arrival: %>
+    <% end %>
+  </div>
+<% end %>
