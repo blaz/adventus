@@ -19,7 +19,7 @@ If that went well start the app with
 bundle exec rails server
 ```
 
-Once the server is started you can open the live timings by visiting `[http://localhost:3000](http:///localhost:3000)`
+Once the server is started you can open the live timings by visiting [http://localhost:3000](http:///localhost:3000)
 
 ## Testing
 
