@@ -9,8 +9,6 @@ gem 'puma', '>= 5.0'
 gem 'redis', '>= 4.0.1'
 gem 'rubocop'
 gem 'sprockets-rails'
-gem 'stimulus-rails'
-gem 'turbo-rails'
 
 gem 'bootsnap', require: false
 
